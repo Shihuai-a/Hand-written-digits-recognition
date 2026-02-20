@@ -15,7 +15,7 @@ def one_hot_encode(y):
     return np.eye(10)[y.astype(int)]
 class HandwritingModel:
     #初始化各种参数
-    def __init__(self,input_size=784,hidden_size=128,output_size=10,learning_rate=0.8):
+    def __init__(self,input_size=784,hidden_size=128,output_size=10,learning_rate=0.5):
         #初始化各层维度
         self.input_size = input_size
         self.hidden_size = hidden_size
